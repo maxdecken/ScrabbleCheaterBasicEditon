@@ -78,8 +78,6 @@ public class Dictionary implements HashTable<String> {
 				result.add(n.data);
 				n = n.next;
 			}
-			
-<<<<<<< HEAD
 			int foundCount = 0;
 			String permutations = "";
 			String toReturn ="[";
@@ -93,13 +91,10 @@ public class Dictionary implements HashTable<String> {
 			}
 			toReturn = "There are " + foundCount + " permutations of the letter combination " + word + ": \n" + permutations + "\n" + toReturn +"] \n";
 			return toReturn;
-=======
 			String toReturn ="[";
 			for(String s : result) {
 				toReturn = toReturn + s + "; ";
 			}
-			return toReturn +"]";
->>>>>>> 8f0ee7e360297621d513266746737b5fcdec796d
 		}else {
 			return "Nothing found!";
 		}
@@ -151,7 +146,6 @@ public class Dictionary implements HashTable<String> {
 	public String getStatus() {
 		String status = "Status: \n";
 		status = status + "Size of hashTable: " + hashTable.length + "\n";
-<<<<<<< HEAD
 		status = status + "Amount of words: " + getAmountOfElements() + "\n";
 		status = status + "Longest chain: " + getLongestChain() + "\n";
 		return status;
@@ -173,12 +167,6 @@ public class Dictionary implements HashTable<String> {
 		return count;
 	}
 	
-=======
-		status = status + "Longest chain: " + getLongestChain();
-		return status;
-	}
-	
->>>>>>> 8f0ee7e360297621d513266746737b5fcdec796d
 	private int getLongestChain() {
 		int longest = 0;
 		for(int i = 0; i < hashTable.length; i++) {

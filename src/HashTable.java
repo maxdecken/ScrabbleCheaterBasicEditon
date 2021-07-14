@@ -9,3 +9,5 @@ public interface HashTable<T> {
 	
 	void addObject(T data);
 }
+
+
